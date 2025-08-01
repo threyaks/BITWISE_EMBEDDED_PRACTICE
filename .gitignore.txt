@@ -1,0 +1,15 @@
+# Ignore binary output
+bin/
+*.o
+*.out
+*.exe
+
+# Ignore temporary files
+*.swp
+*.log
+*.tmp
+
+# VS Code and OS specific
+.vscode/
+.DS_Store
+Thumbs.db
