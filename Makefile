@@ -1,14 +1,27 @@
+# Compiler and flags
 CC = gcc
-CFLAGS = -Iinclude -Wall -Werror
-SRC = src/bit_ops.c
-TEST = tests/test_bit_ops.c
-OUT = bin/test_bit_ops
+CFLAGS = -Wall -Werror -Iinclude
 
+# Source and test files
+SRC = $(wildcard src/*.c)
+TEST = $(wildcard tests/*.c)
+
+# Output binary
+OUT_DIR = bin
+OUT = $(OUT_DIR)/test_bit_ops
+
+# Default target
 all: $(OUT)
 
+# Build rule
 $(OUT): $(SRC) $(TEST)
-	@mkdir -p bin
-	$(CC) $(CFLAGS) -o $(OUT) $(SRC) $(TEST)
+	@mkdir -p $(OUT_DIR)
+	$(CC) $(CFLAGS) -o $@ $^
 
+# Run the executable
+run: $(OUT)
+	./$(OUT)
+
+# Clean build artifacts
 clean:
-	rm -rf bin
+	rm -rf $(OUT_DIR)
