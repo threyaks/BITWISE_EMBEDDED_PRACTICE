@@ -1,27 +1,21 @@
-# Compiler and flags
 CC = gcc
 CFLAGS = -Wall -Werror -Iinclude
 
-# Source and test files
-SRC = $(wildcard src/*.c)
-TEST = $(wildcard tests/*.c)
+SRC = src/bit_ops.c
+TEST_SRC = tests/test_bit_ops.c
+KERNIGHAN_SRC = src/brian_kernighan.c
 
-# Output binary
-OUT_DIR = bin
-OUT = $(OUT_DIR)/test_bit_ops
+BIN_DIR = bin
+TEST_EXE = $(BIN_DIR)/test_bit_ops
+KERNIGHAN_EXE = $(BIN_DIR)/brian_kernighan
 
-# Default target
-all: $(OUT)
+all: $(TEST_EXE) $(KERNIGHAN_EXE)
 
-# Build rule
-$(OUT): $(SRC) $(TEST)
-	@mkdir -p $(OUT_DIR)
+$(TEST_EXE): $(SRC) $(TEST_SRC)
 	$(CC) $(CFLAGS) -o $@ $^
 
-# Run the executable
-run: $(OUT)
-	./$(OUT)
+$(KERNIGHAN_EXE): $(SRC) $(KERNIGHAN_SRC)
+	$(CC) $(CFLAGS) -o $@ $^
 
-# Clean build artifacts
 clean:
-	rm -rf $(OUT_DIR)
+	rm -f $(BIN_DIR)/*
