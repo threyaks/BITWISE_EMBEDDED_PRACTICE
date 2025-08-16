@@ -41,12 +41,13 @@ BITWISE_EMBEDDED_PRACTICE/
    
 3. Run the compiled binaries
    ```bash
-   ./bin/bitwise_tests
+   ./bin/test_bit_ops
    
 4. Clean build files
    ```bash
    make clean
    
+
 
 
 
