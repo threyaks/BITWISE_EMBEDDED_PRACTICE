@@ -15,3 +15,13 @@ It is designed for embedded systems learners who want to master low-level progra
 ---
 
 ## 📂 Project Structure
+
+BITWISE_EMBEDDED_PRACTICE/
+│── bin/ # Compiled binaries
+│── images/ # Images for documentation
+│── include/ # Header files (.h)
+│── src/ # Source code (.c implementations)
+│── tests/ # Unit test cases
+│── LICENSE # License file
+│── Makefile # Build script for easy compilation
+│── README.md # Documentation
