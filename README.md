@@ -26,6 +26,8 @@ BITWISE_EMBEDDED_PRACTICE/
 ├── LICENSE      # License file
 ├── Makefile     # Build script for easy compilation
 └── README.md    # Documentation
+```
+
 ## ⚙️ Build & Run
 
 1. Clone the repository:
