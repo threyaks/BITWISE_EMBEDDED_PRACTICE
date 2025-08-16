@@ -38,6 +38,16 @@ BITWISE_EMBEDDED_PRACTICE/
 2. Build the project using Makefile
    ```bash
     make
+   
+3. Run the compiled binaries
+   ```bash
+   ./bin/bitwise_tests
+   
+4. Clean build files
+   ```bash
+   make clean
+   
+
 
 
 
