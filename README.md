@@ -35,7 +35,8 @@ BITWISE_EMBEDDED_PRACTICE/
    git clone https://github.com/threyaks/BITWISE_EMBEDDED_PRACTICE.git
    cd BITWISE_EMBEDDED_PRACTICE
 
-## Build the project using Makefile
+2.Build the project using Makefile
    ```bash
-   Build the project using Makefile
+   make
+
 
