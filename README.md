@@ -26,3 +26,10 @@ BITWISE_EMBEDDED_PRACTICE/
 ├── LICENSE      # License file
 ├── Makefile     # Build script for easy compilation
 └── README.md    # Documentation
+## ⚙️ Build & Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/threyaks/BITWISE_EMBEDDED_PRACTICE.git
+   cd BITWISE_EMBEDDED_PRACTICE
+
